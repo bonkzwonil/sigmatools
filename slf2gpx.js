@@ -57,6 +57,7 @@ var convertTrkPt = function(logEntry, startDate){
 	extensions: {
 	    'gpxtpx:TrackPointExtension': {
 		'gpxtpx:atemp': Math.floor(logEntry.Temperature),
+		'gpxtpx:hr': parseInt(logEntry.Heartrate),
 		'gpxtpx:cad': parseInt(logEntry.Cadence)
 	    }
 	}
