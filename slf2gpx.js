@@ -143,7 +143,7 @@ readXml(argv._[0], function(err, xml){
 
   var gpx = gpxHeader();
   gpx.metadata = {
-    time: moment().toISOString()
+    time: moment(new Date(xml.Log.GeneralInformation.StartDate)).toISOString()
   };
   gpx.trk = {
     name: xml.Log.GeneralInformation.Name,
