@@ -26,11 +26,6 @@ slf2gps.js converts a sigma "slf" file to standard gpx with gpxtpx:TrackPointExt
 It can process the additional pause markers correctly, so the resulting gpx has correct timestamps for every track point!
 
 
-In Basic usage it should suit your needs.
-
-
-However you can also force it to not do some processing:
-
 
 installation
 ------
@@ -50,6 +45,13 @@ node slf2gpx.js input.slf output.gpx
 
 usage:
 ------
+
+In Basic usage it should suit your needs.
+
+
+However you can also force it to not do some processing:
+
+
 
 ```
 Help: 
