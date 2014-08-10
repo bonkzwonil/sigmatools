@@ -17,10 +17,10 @@ But in the sigma own format "slf", all data seems to be present, even if sometim
 So i digged into the fileformat and came up with a working solution for me: 
 
 
-slf4gpx
+slf2gpx
 ------
 
-slf4gps.js converts a sigma "slf" file to standard gpx with gpxtpx:TrackPointExtension extensions.
+slf2gps.js converts a sigma "slf" file to standard gpx with gpxtpx:TrackPointExtension extensions.
 
 
 It can process the additional pause markers correctly, so the resulting gpx has correct timestamps for every track point!
@@ -31,6 +31,21 @@ In Basic usage it should suit your needs.
 
 However you can also force it to not do some processing:
 
+
+installation
+------
+
+prerequisites
+-------
+You need a working nodejs installation.
+Probably do a ```pacman -S nodejs``` or whatever your distibution would like you to do...
+
+Just clone the git repo and do a npm install:
+```
+git clone https://github.com/bonkzwonil/sigmatools.git
+npm install
+node slf2gpx.js input.slf output.gpx
+```
 
 usage:
 ------
