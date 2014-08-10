@@ -18,7 +18,7 @@ So i digged into the fileformat and came up with a working solution for me:
 
 
 slf2gpx
-------
+========
 
 slf2gps.js converts a sigma "slf" file to standard gpx with gpxtpx:TrackPointExtension extensions.
 
@@ -26,12 +26,16 @@ slf2gps.js converts a sigma "slf" file to standard gpx with gpxtpx:TrackPointExt
 It can process the additional pause markers correctly, so the resulting gpx has correct timestamps for every track point!
 
 
+features
+-------
+
+* Uses the correct Start Time and not the file creation date (oh boy sigma)
+* Calculates the correct timestamps for each gpx track point based
+* Inserts pauses so that the total ride time is correct and the gps point's timestamp at which the pause occured is shifted correctly
+* Supports an exports HeartRate, Cadence, Elevation and Temperature Data
 
 installation
 ------
-
-prerequisites
--------
 You need a working nodejs installation.
 Probably do a ```pacman -S nodejs``` or whatever your distibution would like you to do...
 
