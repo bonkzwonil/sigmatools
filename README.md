@@ -20,7 +20,7 @@ So i digged into the fileformat and came up with a working solution for me:
 slf2gpx
 ========
 
-slf2gps.js converts a sigma "slf" file to standard gpx with gpxtpx:TrackPointExtension extensions.
+slf2gpx.js converts a sigma "slf" file to standard gpx with gpxtpx:TrackPointExtension extensions.
 
 
 It can process the additional pause markers correctly, so the resulting gpx has correct timestamps for every track point!
