@@ -1,0 +1,17 @@
+{
+  "name": "sigmatools",
+  "version": "0.0.1",
+  "description": "Sigma Tools",
+  "main": "slf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mathias Menzel-Nielsen <matze@matzsoft.de>",
+  "license": "BSD",
+  "dependencies": {
+    "minimist": "^0.2.0",
+    "moment": "^2.8.1",
+    "underscore": "^1.6.0",
+    "xml2js": "^0.4.4"
+  }
+}
