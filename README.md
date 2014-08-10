@@ -1,4 +1,43 @@
 sigmatools
 ==========
 
-Convert sigma rox 10.0 data to useable standard formats. like slf to gpx.
+Convert sigma rox 10.0 data to useable standard formats. slf2gpx
+
+
+motivation
+------
+I bought myself a sigma rox 10.0 gps bike training computer. 
+While it is a neat little device, the software and especially the export to strava sucks ass.
+Their "data center 3" (besides that its adobe air crap), just fails to export correct data. For example all pauses are missing, Timezones are wrong. etcpp
+
+But in the sigma own format "slf", all data seems to be present, even if sometimes in a very crude own way of doing things :)
+
+
+So i digged into the fileformat and came up with a working solution for me: 
+
+
+slf4gpx
+------
+
+slf4gps.js converts a sigma "slf" file to standard gpx with gpxtpx:TrackPointExtension extensions.
+
+It can process the additional pause markers correctly, so the resulting gpx has correct timestamps for every track point!
+
+In Basic usage it should suit your needs.
+
+However you can also force it to not do some processing:
+
+usage:
+------
+
+Help: 
+ -h or --help: this help
+ -p or --nopauses: do not process pause markers. This will lead to wrong daytimes in trkpts
+ -k or --keepnongps: do not filter out points without gps coords.
+ -d or --debug: debug on
+ -s or --silent: rig for silent running
+ 
+ 
+ 
+ 
+ Im working on more tools to get rid of even using that "data center" software, so stay tuned while im analyzing the usb dumps :)
