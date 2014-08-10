@@ -43,6 +43,7 @@ Probably do a ```pacman -S nodejs``` or whatever your distibution would like you
 Just clone the git repo and do a npm install:
 ```
 git clone https://github.com/bonkzwonil/sigmatools.git
+cd sigmatools
 npm install
 node slf2gpx.js input.slf output.gpx
 ```
