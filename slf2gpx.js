@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 //SLF Format Parser
 
 var xml2js = require('xml2js');
